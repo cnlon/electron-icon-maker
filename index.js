@@ -6,10 +6,10 @@ const path = require('path');
 const fs = require('fs');
 const icongen = require( 'icon-gen' );
 
-var pngSizes = [16, 24, 32, 48, 64, 128, 256, 512, 1024];
+var pngSizes = [16, 24, 32, 48, 64, 128, 256, 512, 1024, 1536];
 
 args
-    .option('input', 'Input PNG file. Recommended (1024x1024)', './icon.png')
+    .option('input', 'Input PNG file. Recommended (1536x1536)', './icon.png')
     .option('output', 'Folder to output new icons folder', './');
 
 const flags = args.parse(process.argv);
